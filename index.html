@@ -60,6 +60,26 @@
       border-left: 4px solid var(--rosa);
       padding-left: 0.8rem;
       margin: 2.5rem 0 1.5rem 0;
+
+      /* Subrayado rosa suave */
+      border-bottom: 3px solid var(--rosa);
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .photo-container img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(115, 73, 73, 0.4);
+      object-fit: cover;
+      filter: saturate(0.8) brightness(0.9);
     }
 
     .technologies-container {
@@ -143,6 +163,10 @@
   </header>
 
   <section>
+    <div class="photo-container">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=250&q=80" alt="Foto decorativa con gama de colores marrón y rosa" />
+    </div>
+
     <h2>Sobre mí</h2>
     <p style="text-align: center; font-size: 1.05rem; max-width: 800px; margin: 0 auto;">
       Actualmente soy estudiante de Ingeniería Informática en UADE, cursando mi tercer año. Me apasiona el desarrollo web y de aplicaciones. 
