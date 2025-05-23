@@ -58,30 +58,29 @@
       border-radius: 12px;
     }
 
-    .languages-container {
+    .technologies-container {
       display: flex;
-      justify-content: center;
-      gap: 3rem;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
       text-align: center;
     }
 
-    .language-item {
+    .tech-item {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
-      border-radius: 10px;
       padding: 10px;
+      border-radius: 10px;
     }
 
-    .language-item:hover {
+    .tech-item:hover {
       transform: scale(1.1);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
-    .language-item img {
+    .tech-item img {
       height: 80px;
-      display: block;
-      margin: 0 auto 10px auto;
+      margin-bottom: 8px;
     }
 
     .contact-form input,
@@ -119,25 +118,6 @@
       box-shadow: 0 6px 12px rgba(224, 102, 102, 0.6);
     }
 
-    .social-links {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      font-size: 1.2rem;
-    }
-
-    .social-links li a {
-      color: var(--azul);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .social-links li a:hover {
-      color: var(--rojo);
-    }
-
     footer {
       background-color: var(--gris);
       color: #555;
@@ -152,8 +132,68 @@
 <body>
   <header>
     <h1>Facundo Moran</h1>
-    <p>-Estudiante de Ingeniería Informática-</p>
+    <p>- Estudiante de Ingeniería Informática -</p>
   </header>
+
+  <section>
+    <h2>Tecnologías y Frameworks</h2>
+    <div class="technologies-container">
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+        <p>Java</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <p>Python</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+        <p>Spring Boot</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <p>React</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" style="height: 60px;" />
+        <p>Redux</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" alt="Hibernate" />
+        <p>Hibernate</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bases de Datos</h2>
+    <div class="technologies-container">
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+        <p>SQL</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+        <p>Redis</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+        <p>MongoDB</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg" alt="Cassandra" />
+        <p>Cassandra</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Neo4j_Logo.svg" alt="Neo4j" style="height: 60px;" />
+        <p>Neo4j</p>
+      </div>
+    </div>
+  </section>
 
   <section>
     <h2>Sobre mí</h2>
@@ -162,45 +202,6 @@
       Busco integrarme en un entorno profesional para seguir aprendiendo de otros, mejorar mis habilidades técnicas y potenciar mi perfil como desarrollador.
       Valoro el trabajo en equipo y tengo habilidades de liderazgo que me gusta poner en práctica.
     </p>
-  </section>
-
-  <section>
-    <h2>Tecnologías que manejo</h2>
-    <div class="languages-container">
-      <div class="language-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-        <p>Java</p>
-      </div>
-      <div class="language-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-        <p>Python</p>
-      </div>
-      <div class="language-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-        <p>JavaScript</p>
-      </div>
-      <div class="language-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-        <p>React</p>
-      </div>
-      <div class="language-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
-        <p>Spring Boot</p>
-      </div>
-      <div class="language-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-        <p>MySQL</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Redes Sociales</h2>
-    <ul class="social-links">
-      <li><a href="https://www.linkedin.com/in/facundo-iriarte-54259b183" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/facu_iriartee/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://github.com/FacuIria" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-    </ul>
   </section>
 
   <section>
