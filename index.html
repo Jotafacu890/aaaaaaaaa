@@ -4,71 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Facundo Moran - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     :root {
-      --azul: #003366;
-      --rojo: #ff4d4d;
-      --gris: #f7f7f7;
-      --fuente: 'Inter', sans-serif;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      --marron: #8C7B7B;
+      --rosa: #C9A9B3;
+      --oscuro: #1E2526;
+      --gris-claro: #D9D8D2;
+      --rojo: #734949;
+      --fuente: 'Segoe UI', sans-serif;
     }
 
     body {
+      margin: 0;
       font-family: var(--fuente);
-      background-color: #eaeaea;
-      color: #222;
+      background-color: var(--marron);
+      color: var(--oscuro);
+      font-size: 14px;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, var(--azul), var(--rojo));
+      background-color: var(--oscuro);
       color: white;
-      padding: 3rem 1rem 2rem;
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    header h1 {
+    h1 {
       font-size: 2.5rem;
-      font-weight: 700;
+      margin: 0;
     }
 
     header p {
+      margin-top: 0.5rem;
       font-size: 1.2rem;
-      opacity: 0.9;
+      font-weight: 300;
     }
 
     section {
-      background: #fff;
+      padding: 3rem 2rem;
       max-width: 900px;
-      margin: 3rem auto 2rem;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      margin: 3rem auto 2rem auto;
+      background-color: var(--gris-claro);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
+      text-align: center;
       font-size: 1.5rem;
-      color: var(--azul);
-      border-left: 4px solid var(--rojo);
-      padding-left: 0.6rem;
-      margin-bottom: 1.5rem;
+      color: var(--rojo);
+      border-left: 4px solid var(--rosa);
+      padding-left: 0.8rem;
+      margin: 2.5rem 0 1.5rem 0;
     }
 
     .technologies-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2rem;
-      margin-bottom: 2rem;
+      margin-top: 1rem;
     }
 
     .tech-item {
       text-align: center;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+
+    .tech-item:hover {
+      transform: scale(1.05);
     }
 
     .tech-item img {
@@ -77,88 +86,124 @@
     }
 
     .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .contact-form input,
     .contact-form textarea {
-      padding: 0.8rem;
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--rosa);
+      border-radius: 6px;
       font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background: #fafafa;
-      transition: border 0.3s ease;
+      background-color: white;
+      color: var(--oscuro);
     }
 
     .contact-form input:focus,
     .contact-form textarea:focus {
-      border-color: var(--azul);
       outline: none;
+      border-color: var(--rojo);
+      box-shadow: 0 0 5px rgba(115, 73, 73, 0.3);
     }
 
     .contact-form button {
-      background-color: var(--azul);
+      width: 100%;
+      background-color: var(--rojo);
       color: white;
-      padding: 0.9rem 1.5rem;
       border: none;
-      border-radius: 8px;
+      padding: 0.9rem;
       font-size: 1rem;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
     .contact-form button:hover {
-      background-color: var(--rojo);
+      background-color: var(--rosa);
     }
 
     footer {
+      background-color: var(--oscuro);
+      color: var(--gris-claro);
       text-align: center;
-      padding: 2rem 0 1rem;
-      font-size: 0.85rem;
-      color: #555;
+      padding: 1rem 0;
+      font-size: 0.9rem;
       font-style: italic;
-    }
-
-    p {
-      margin-bottom: 1rem;
-      font-size: 1.05rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Facundo Moran</h1>
-    <p>Estudiante de Ingeniería Informática</p>
+    <p>- Estudiante de Ingeniería Informática -</p>
   </header>
 
   <section>
     <h2>Sobre mí</h2>
-    <p>
-      Actualmente soy estudiante de Ingeniería Informática en UADE, cursando mi tercer año. Me apasiona el desarrollo web y de aplicaciones.
+    <p style="text-align: center; font-size: 1.05rem; max-width: 800px; margin: 0 auto;">
+      Actualmente soy estudiante de Ingeniería Informática en UADE, cursando mi tercer año. Me apasiona el desarrollo web y de aplicaciones. 
       Busco integrarme en un entorno profesional para seguir aprendiendo de otros, mejorar mis habilidades técnicas y potenciar mi perfil como desarrollador.
       Valoro el trabajo en equipo y tengo habilidades de liderazgo que me gusta poner en práctica.
     </p>
 
     <h2>Tecnologías y Frameworks</h2>
     <div class="technologies-container">
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/><p>Java</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><p>Python</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring"/><p>Spring Boot</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"/><p>JavaScript</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/><p>React</p></div>
-      <div class="tech-item"><img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" style="height: 50px;" /><p>Redux</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" alt="Hibernate"/><p>Hibernate</p></div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+        <p>Java</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <p>Python</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+        <p>Spring Boot</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <p>React</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" style="height: 50px;" />
+        <p>Redux</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" alt="Hibernate" />
+        <p>Hibernate</p>
+      </div>
     </div>
 
     <h2>Bases de Datos</h2>
     <div class="technologies-container">
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/><p>MySQL</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"/><p>Redis</p></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/><p>MongoDB</p></div>
-      <div class="tech-item"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg" alt="Cassandra"/><p>Cassandra</p></div>
-      <div class="tech-item"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Neo4j_Logo.svg" alt="Neo4j" style="height: 60px;" /><p>Neo4j</p></div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+        <p>SQL</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+        <p>Redis</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+        <p>MongoDB</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cassandra/cassandra-original.svg" alt="Cassandra" />
+        <p>Cassandra</p>
+      </div>
+      <div class="tech-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Neo4j_Logo.svg" alt="Neo4j" style="height: 50px;" />
+        <p>Neo4j</p>
+      </div>
     </div>
 
     <h2>Formulario de Contacto</h2>
@@ -173,5 +218,6 @@
   <footer>
     <p>&copy; 2025 Facundo Moran - Todos los derechos reservados</p>
   </footer>
+
 </body>
 </html>
